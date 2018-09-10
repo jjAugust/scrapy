@@ -4,6 +4,13 @@ import BookItem
  
 class NovelSpider(scrapy.Spider):
     name = 'novel'
+    ITEM_PIPELINES = {
+        'myproject.pipelines.ReadnovelPipeline': 300,
+        'myproject.pipelines.JsonWriterPipeline': 800,
+    }
+    custom_settings = {
+        'FEED_EXPORT_ENCODING' : 'utf-8',
+    }
     allowed_domains = ['readnovel.com']
     start_urls = ['https://www.readnovel.com/free/all']
  

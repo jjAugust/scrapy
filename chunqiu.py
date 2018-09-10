@@ -9,6 +9,8 @@ class QuotesSpider(scrapy.Spider):
     name = "quotes"
     custom_settings = {
         'FEED_EXPORT_ENCODING' : 'utf-8',
+        'myproject.pipelines.PricePipeline': 300,
+        'myproject.pipelines.JsonWriterPipeline': 800,
     }
     start_urls = [
         'https://china-sss.fliggy.com/category-283146094-1518913137.htm?spm=a1z10.1-b-s.w5002-15573120513.101.3cd65e45Iu2mfX&search=y&catName=%C8%D5%B1%BE',

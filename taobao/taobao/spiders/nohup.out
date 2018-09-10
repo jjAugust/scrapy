@@ -1,0 +1,219 @@
+2018-08-31 21:47:13 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: taobao)
+2018-08-31 21:47:13 [scrapy.utils.log] INFO: Versions: lxml 3.5.0.0, libxml2 2.9.3, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.5.2 (default, Nov 23 2017, 16:37:01) - [GCC 5.4.0 20160609], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.13.0-41-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-08-31 21:47:13 [scrapy.crawler] INFO: Overridden settings: {'FEED_FORMAT': 'json', 'NEWSPIDER_MODULE': 'taobao.spiders', 'SPIDER_MODULES': ['taobao.spiders'], 'FEED_URI': 'result.json', 'BOT_NAME': 'taobao'}
+2018-08-31 21:47:13 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2018-08-31 21:47:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'taobao.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-31 21:47:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-31 21:47:13 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-31 21:47:13 [scrapy.core.engine] INFO: Spider opened
+2018-08-31 21:47:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-31 21:47:13 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-08-31 21:47:15 [py.warnings] WARNING: /usr/local/lib/python3.5/dist-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-08-31 21:47:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session {"desiredCapabilities": {"javascriptEnabled": true, "browserName": "phantomjs", "platform": "ANY", "version": ""}, "capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "any", "browserName": "phantomjs"}}}
+2018-08-31 21:47:16 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:16 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/url {"url": "https://traveldetail.fliggy.com/item.htm?spm=a1z10.3-b-s.w4011-15572466491.71.6eda23e8TVLI3R&id=545656466491&rn=923fc53bbc95a76aa8bef9c4a653c5e3&abbucket=7", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/element {"using": "xpath", "value": ".//li[@id='itemPropsLi00']", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/element/:wdc:1535723238381/click {"id": ":wdc:1535723238381", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/element {"using": "xpath", "value": ".//li[@id='itemPropsLi17']", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/element/:wdc:1535723238382/click {"id": ":wdc:1535723238382", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/element {"using": "xpath", "value": ".//div[@class='month-list']/span[1]", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/element/:wdc:1535723238383/click {"id": ":wdc:1535723238383", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/element {"using": "xpath", "value": ".//div[@class='item-calendar']/table[@class='date-table']/tbody/tr[4]/td[2]/div", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/element/:wdc:1535723238384/click {"id": ":wdc:1535723238384", "sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/source {"sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:37805/wd/hub/session/5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c/window {"sessionId": "5f2fb4b0-ad24-11e8-aeab-b3a8b01e3f0c"}
+2018-08-31 21:47:18 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:47:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://traveldetail.fliggy.com/item.htm?spm=a1z10.3-b-s.w4011-15572466491.71.6eda23e8TVLI3R&id=545656466491&rn=923fc53bbc95a76aa8bef9c4a653c5e3&abbucket=7> (referer: None)
+2018-08-31 21:47:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://traveldetail.fliggy.com/item.htm?spm=a1z10.3-b-s.w4011-15572466491.71.6eda23e8TVLI3R&id=545656466491&rn=923fc53bbc95a76aa8bef9c4a653c5e3&abbucket=7> (referer: None)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/utils/defer.py", line 102, in iter_errback
+    yield next(it)
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/offsite.py", line 30, in process_spider_output
+    for x in result:
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/referer.py", line 339, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/usr/local/lib/python3.5/dist-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/junjie/junjie xiong/gitcode/scrapy/taobao/taobao/spiders/feizhu.py", line 43, in parse_news
+    if round(float(price))<arg:
+NameError: name 'arg' is not defined
+2018-08-31 21:47:18 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-08-31 21:47:18 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 1152659,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 8, 31, 13, 47, 18, 933668),
+ 'log_count/DEBUG': 26,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 7,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 56688640,
+ 'memusage/startup': 56688640,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2018, 8, 31, 13, 47, 13, 609296)}
+2018-08-31 21:47:18 [scrapy.core.engine] INFO: Spider closed (finished)
+登录结果：loginRes = (235, b'Authentication successful')
+登录成功，code = 235
+mail has been send successfully. message:From nobody Fri Aug 31 21:47:15 2018
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+From: 466301416@qq.com
+To: junjie.sop@gmail.com,junjie19890815@126.com
+Subject: =?utf-8?b?54is6Jmr5ZCv5Yqo54q25oCB5rGH5oql77yabmFtZSA9IHRhb2Jhbywgc3RhcnRUaW1lID0gMjAxOC0wOC0zMSAyMTo0NzoxMy42MTIyNTg=?=
+
+57uG6IqC77yac3RhcnQgc3VjY2Vzc3MhIGF0OjIwMTgtMDgtMzEgMjE6NDc6MTMuNjEyMjU4
+
+get news data succ
+2018-08-31 21:54:12 [scrapy.utils.log] INFO: Scrapy 1.5.1 started (bot: taobao)
+2018-08-31 21:54:12 [scrapy.utils.log] INFO: Versions: lxml 3.5.0.0, libxml2 2.9.3, cssselect 1.0.3, parsel 1.5.0, w3lib 1.19.0, Twisted 18.7.0, Python 3.5.2 (default, Nov 23 2017, 16:37:01) - [GCC 5.4.0 20160609], pyOpenSSL 18.0.0 (OpenSSL 1.1.0h  27 Mar 2018), cryptography 2.2.2, Platform Linux-4.13.0-41-generic-x86_64-with-Ubuntu-16.04-xenial
+2018-08-31 21:54:12 [scrapy.crawler] INFO: Overridden settings: {'BOT_NAME': 'taobao', 'FEED_FORMAT': 'json', 'FEED_URI': 'result.json', 'SPIDER_MODULES': ['taobao.spiders'], 'NEWSPIDER_MODULE': 'taobao.spiders'}
+2018-08-31 21:54:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole']
+2018-08-31 21:54:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'taobao.middlewares.SeleniumMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2018-08-31 21:54:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2018-08-31 21:54:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2018-08-31 21:54:12 [scrapy.core.engine] INFO: Spider opened
+2018-08-31 21:54:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-08-31 21:54:12 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2018-08-31 21:54:13 [py.warnings] WARNING: /usr/local/lib/python3.5/dist-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+
+2018-08-31 21:54:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session {"desiredCapabilities": {"javascriptEnabled": true, "browserName": "phantomjs", "platform": "ANY", "version": ""}, "capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "phantomjs", "platformName": "any"}}}
+2018-08-31 21:54:14 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:14 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/url {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "url": "https://traveldetail.fliggy.com/item.htm?spm=a1z10.3-b-s.w4011-15572466491.71.6eda23e8TVLI3R&id=545656466491&rn=923fc53bbc95a76aa8bef9c4a653c5e3&abbucket=7"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/element {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "value": ".//li[@id='itemPropsLi00']", "using": "xpath"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/element/:wdc:1535723657557/click {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "id": ":wdc:1535723657557"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/element {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "value": ".//li[@id='itemPropsLi17']", "using": "xpath"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/element/:wdc:1535723657558/click {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "id": ":wdc:1535723657558"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/element {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "value": ".//div[@class='month-list']/span[1]", "using": "xpath"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/element/:wdc:1535723657559/click {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "id": ":wdc:1535723657559"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/element {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "value": ".//div[@class='item-calendar']/table[@class='date-table']/tbody/tr[4]/td[2]/div", "using": "xpath"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: POST http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/element/:wdc:1535723657560/click {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588", "id": ":wdc:1535723657560"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: GET http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/source {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: DELETE http://127.0.0.1:59935/wd/hub/session/58a4ca30-ad25-11e8-9a24-87b9bfc35588/window {"sessionId": "58a4ca30-ad25-11e8-9a24-87b9bfc35588"}
+2018-08-31 21:54:17 [selenium.webdriver.remote.remote_connection] DEBUG: Finished Request
+2018-08-31 21:54:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://traveldetail.fliggy.com/item.htm?spm=a1z10.3-b-s.w4011-15572466491.71.6eda23e8TVLI3R&id=545656466491&rn=923fc53bbc95a76aa8bef9c4a653c5e3&abbucket=7> (referer: None)
+2018-08-31 21:54:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://traveldetail.fliggy.com/item.htm?spm=a1z10.3-b-s.w4011-15572466491.71.6eda23e8TVLI3R&id=545656466491&rn=923fc53bbc95a76aa8bef9c4a653c5e3&abbucket=7>
+{'price': '2299.00'}
+2018-08-31 21:54:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-08-31 21:54:19 [scrapy.extensions.feedexport] INFO: Stored json feed (1 items) in: result.json
+2018-08-31 21:54:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/response_bytes': 1152657,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2018, 8, 31, 13, 54, 19, 372018),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 27,
+ 'log_count/INFO': 8,
+ 'log_count/WARNING': 1,
+ 'memusage/max': 56729600,
+ 'memusage/startup': 56729600,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2018, 8, 31, 13, 54, 12, 361909)}
+2018-08-31 21:54:19 [scrapy.core.engine] INFO: Spider closed (finished)
+登录结果：loginRes = (235, b'Authentication successful')
+登录成功，code = 235
+mail has been send successfully. message:From nobody Fri Aug 31 21:54:13 2018
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+From: 466301416@qq.com
+To: junjie.sop@gmail.com,junjie19890815@126.com
+Subject: =?utf-8?b?54is6Jmr5ZCv5Yqo54q25oCB5rGH5oql77yabmFtZSA9IHRhb2Jhbywgc3RhcnRUaW1lID0gMjAxOC0wOC0zMSAyMTo1NDoxMi4zNjQ1ODE=?=
+
+57uG6IqC77yac3RhcnQgc3VjY2Vzc3MhIGF0OjIwMTgtMDgtMzEgMjE6NTQ6MTIuMzY0NTgx
+
+get news data succ
+登录结果：loginRes = (235, b'Authentication successful')
+登录成功，code = 235
+mail has been send successfully. message:From nobody Fri Aug 31 21:54:19 2018
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+From: 466301416@qq.com
+To: junjie.sop@gmail.com,junjie19890815@126.com
+Subject: =?utf-8?b?5L2O5Lu35o+Q6YaS?=
+
+57uG6IqC77ya5qOA5rWL5Yiw5pyJ5L2O5LqO5oKo6K6+572u55qE5L2O5Lu3
+
